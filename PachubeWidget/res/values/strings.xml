@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pachube Widget beta</string>
+    <string name="feed_id">Feed ID</string>
+    <string name="pachube_api_key">Pachube Api Key</string>
+    <string name="config_rate">Update rate</string>
+    <string name="spinner_config_rate">Update rate</string>
+    <string name="btn_config_save">Save</string>
+    <string name="btn_config_cancel">Cancel</string>
+    <string name="update_rate_1">1 minute</string>
+    <string name="update_rate_2">5 minutes</string>
+    <string name="update_rate_3">10 minutes</string>
+    <string name="update_rate_4">30 minutes</string>
+    <string name="update_rate_5">1 hour</string>
+    <string name="no_connection">No connection!</string>
+</resources>

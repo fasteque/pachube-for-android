@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:background="#CE2452" >
+<TableLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:layout_marginLeft="5dip"
+  android:layout_marginRight="5dip"
+  android:layout_marginTop="5dip"
+  android:layout_marginBottom="5dip"
+  android:layout_gravity="fill_horizontal" 
+  android:background="#CE2452">
+	
+	<View android:layout_height="2px"
+          android:background="#393939"
+          android:layout_marginTop="5dip"
+          android:layout_marginBottom="5dip" />
+          
+	<TableRow>
+		<TextView android:id="@+id/tFeedId"
+			 	  android:text="@string/feed_id"
+			 	  android:layout_width="wrap_content"
+			 	  android:layout_height="wrap_content"
+			 	  android:textColor="#FFFFFF"
+			 	  android:textStyle="bold" />
+	
+		<EditText android:id="@+id/feedId"
+				  android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"
+				  android:numeric="integer"
+				  android:inputType="number"
+				  android:maxLength="5" />
+	</TableRow>
+	<TableRow>
+		<TextView android:id="@+id/tPachubeApiKey"
+				  android:text="@string/pachube_api_key"
+				  android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"
+				  android:textColor="#FFFFFF"
+				  android:textStyle="bold" /> 
+	
+		<EditText android:id="@+id/pachubeApiKey"
+				  android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"
+				  android:inputType="textMultiLine" />
+	</TableRow>
+	<TableRow>
+		<TextView android:id="@+id/tUpdateRate"
+				  android:text="@string/config_rate"
+				  android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"
+				  android:textColor="#FFFFFF"
+				  android:textStyle="bold" />
+				   
+		<Spinner android:id="@+id/updateRate"
+        		 android:layout_width="fill_parent"
+        		 android:layout_height="wrap_content"
+        		 android:drawSelectorOnTop="true"
+        		 android:prompt="@string/spinner_config_rate" />
+    </TableRow>
+	<TableRow>
+		<TextView />
+        <Button android:id="@+id/btnSave" 
+            	android:text="@string/btn_config_save" />
+        <Button android:id="@+id/btnCancel" 
+            	android:text="@string/btn_config_cancel" />
+    </TableRow>
+	<View android:layout_height="2px"
+          android:background="#393939"
+          android:layout_marginTop="5dip"
+          android:layout_marginBottom="5dip" />
+</TableLayout>
+</LinearLayout>
